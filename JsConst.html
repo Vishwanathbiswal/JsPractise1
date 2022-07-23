@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Const</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name: "vishwa",
+            age: 28
+        }
+        // with const, we can't change the values
+        // person = {
+        //     name : "divya",
+        //     age : 24
+        // }
+        
+        // but with const, we can change it's properties
+        person.name = "divya";
+        person.age = 24;
+        console.log(person.name);
+        console.log(person.age);
+    </script>
+</body>
+</html>

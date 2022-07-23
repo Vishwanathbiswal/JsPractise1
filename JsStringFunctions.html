@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+<body>
+    <p id="text"></p>
+    <p id="output"></p>
+    <script>
+        let statement = "React JS \n is fun";
+        let program = "JavaScript"
+        let nameLength = name.length;
+        // calculating the length of string
+        // document.getElementById('text').innerHTML = "String = " + name;
+        // document.getElementById('output').innerHTML = "Length = " + nameLength;
+        // document.getElementById('text').innerHTML = statement;
+
+        // slice() extracts a part of a string and returns the extracted part in a new string.
+        // let programSlice = program.slice(4, 6);
+        // let programSlice = program.slice(4);
+        // document.getElementById("output").innerHTML = programSlice;
+
+        // substring() is similar to slice().
+        // The difference is that start and end values less than 0 are treated as 0 in substring().
+        // let programSubstring = program.substring(-6);
+        // document.getElementById("output").innerHTML = programSubstring;
+
+        // substr() is similar to slice().
+        // The difference is that the second parameter specifies the length of the extracted part.
+        // let programSubstr = program.substr(4,6);
+        // document.getElementById("output").innerHTML = programSubstr;
+
+        // replace() method replaces a specified value with another value in a string:
+        // let statementReplace = statement.replace("React", "Vue");
+        // document.getElementById("output").innerHTML = statementReplace;
+
+        // A string is converted to upper case with toUpperCase():
+        // let programUpperCase = program.toUpperCase();
+        // document.getElementById("output").innerHTML = programUpperCase;
+
+        // A string is converted to lower case with toLowerCase():
+        // let programLowerCase = program.toLocaleLowerCase();
+        // document.getElementById("output").innerHTML = programLowerCase;
+
+        // concat() joins two or more strings
+        // let fname = "Vishwanath"
+        // let lname = "Biswal"
+        // // let fullName = fname.concat(lname)
+        // let fullName = fname.concat(" ",lname) //for proving space between first & second string
+        // document.getElementById("output").innerHTML = fullName;
+
+        // let StringHavingWhitespaces = "       Hello           ";
+        // let removeXtraWhitespaces = StringHavingWhitespaces.trim();
+        // document.getElementById("text").innerHTML = StringHavingWhitespaces;
+        // document.getElementById("output").innerHTML = removeXtraWhitespaces;
+
+        // charAt() method returns the character at a specified index (position) in a string
+        // const library = "angular"
+        // const libraryPosition = library.charAt(0)
+        // document.getElementById("output").innerHTML = libraryPosition
+
+        // The charCodeAt() method returns the unicode of the character at a specified index in a string
+        // The method returns a UTF-16 code (an integer between 0 and 65535)
+        // const library = "angular"
+        // const libraryCode = library.charCodeAt(0)
+        // document.getElementById("output").innerHTML = libraryCode
+
+        // Property Access
+        // let library="react js";
+        // library[0] = "V"
+        // library.charAt(1) = "A"
+        // let libraryPosition = library.charAt(1);
+        // let propertyAccess = library[0];
+        // document.getElementById("text").innerHTML = libraryPosition;
+        // document.getElementById("output").innerHTML = libraryPosition;
+
+        // split()
+        // const framework = "django is a popular python framework";
+        // const frameworkSeggregation = framework.split(" ");
+        // document.getElementById("output").innerHTML = frameworkSeggregation;
+        // console.log(typeof(frameworkSeggregation))
+
+        const framework = "django is a popular python framework";
+        // indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string
+        // const indexofframework = framework.indexOf("a")
+        
+        // lastIndexOf() method returns the index of the last occurrence of a specified text in a string
+        // const indexofframework = framework.lastIndexOf("a") 
+        // const indexofframework = framework.indexOf("popular")
+
+        // search() method searches a string for a specified value and returns the position of the match
+        // const indexofframework = framework.search("popular")
+        document.getElementById("output").innerHTML = indexofframework;
+    </script>
+</body>
+</html>

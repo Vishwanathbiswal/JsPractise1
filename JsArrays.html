@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Arrays</title>
+</head>
+<body>
+    <p id="blank"></p>
+    <p id="length"></p>
+    <p id="sort"></p>
+    <p id="last-element"></p>
+    <script>
+        const cars = ["Lamborghini", "Rolls Roys", "Austin Martin", "Porche", 23]
+        // modifying the value of an array
+        cars[3] = "Marcedes";
+        // calculating length
+        carsLength = cars.length;
+        // sorting an array
+        carsSort = cars.sort();
+        document.getElementById("blank").innerHTML = cars;
+        document.getElementById("length").innerHTML = "Length = " + carsLength;
+        document.getElementById('sort').innerHTML = carsSort;
+
+        // can't use -ve index in an array to access the elements
+        // document.getElementById('blank').innerHTML = cars[-1]; 
+
+        // accessing last element of an array using length
+        document.getElementById('last-element').innerHTML = cars[cars.length-2];
+        
+        console.log(typeof(cars));
+    </script>
+</body>
+</html>

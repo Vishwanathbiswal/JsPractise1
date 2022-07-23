@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Arrow Function</title>
+</head>
+<body>
+   <script>
+        // using es5 function()
+        // const integers = [1, 2, 3];
+        // const updatedIntegers = integers.map(function(number){
+        //     return number += 1
+        // });
+        // console.log(updatedIntegers);
+
+        // using es6 arrow function
+        // const integers = [1, 2, 3];
+        // const updatedIntegers = integers.map((number) => {
+        //     return number += 1
+        // });
+        // console.log(updatedIntegers);
+
+        // if we have only one parameter then we can define arrow function in one line only, as below
+        // const integers = [1, 2, 3];
+        // const updatedIntegers = integers.map((number) => number += 1);
+        // console.log(updatedIntegers);
+
+        // we can remove () as well before & after number
+        const integers = [1, 2, 3];
+        const updatedIntegers = integers.map(number => number += 1);
+        console.log(updatedIntegers);
+        
+        // filtering adults
+        const ages = [29, 45, 18, 10];
+        const adults = ages.filter(age => age > 20 );
+        console.log(adults);
+   </script> 
+</body>
+</html>
