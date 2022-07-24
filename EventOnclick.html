@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Onclick Event</title>
+    <style>
+        .format{
+            text-align: center;
+        }
+        #blank{
+            font-family: Arial, Helvetica, sans-serif;
+            color:blue;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="format">
+        <p id="blank">Welcome to JS Tutorial</p>
+        <button onclick="changeText()">Change Text</button>
+        <button onclick="notification()">Get Alert</button>
+    </div>
+    <script>
+        function changeText(){
+            document.getElementById('blank').innerHTML = "Welcome to JavaScript Tutorial"
+        }
+        function notification(){
+            alert("Happy Coding..!!")
+        }
+    </script>
+</body>
+</html>
